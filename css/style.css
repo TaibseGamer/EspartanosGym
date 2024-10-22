@@ -3,15 +3,16 @@
     padding: 0;
     box-sizing: border-box;
   }
-  html, body {
-    background-color: var(--bg-color);
-  }
+
   :root {
     --bg-color: #0B192C;
     --text-color: #000000;
     --bg-second-color: #FF6500;
     --text-second-color: #ffff;
     --bg-tercia-color: #1E3E62;
+  }
+  html, body {
+    background-color: var(--bg-color);
   }
   img {
     width: 100%;
@@ -37,8 +38,150 @@
     margin-top: 20px;
   }
   .carousel-item img {
-    height: 800px; /* Ajusta la altura deseada */
-    object-fit: cover; /* Cubre el área del contenedor */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 800px; 
+    object-fit: cover;
+    width: 100%; 
   }
   
+  /* contenido principal */
+
+  h5 {
+    color: var(--bg-second-color); /* Título en naranja */
+  }
+  
+  .content-main {
+    background-color: var(--bg-color);
+    color: var(--bg-second-color)
+  }
+  
+  .usuario-comment {
+    background-color: var(--bg-tercia-color); 
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%; 
+  }
+  
+  .comment {
+    font-style: italic; 
+  }
+  
+  .user-image {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+  }
+  
+  .user-name {
+    font-weight: bold; 
+  }
+  
+  .user-profession {
+    color: #555; 
+    font-size: 0.9rem; 
+  }
+  
+  .stars {
+    font-size: 1.2rem; 
+  }
+  
+  .card-img-top {
+    width: 100%; 
+    height: 520px; 
+    object-fit: cover; 
+  }
+  
+  .card-body {
+    font-size: 0.9rem; 
+  }
+  
+  .card-title {
+    font-size: 1.2rem; 
+  }
+  
+  .card {
+    transition: transform 0.2s ease-in-out;
+    height: 100%; 
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .content-main .row {
+    align-items: flex-start; 
+  }
+  
+  .row-cols-1 {
+    margin-bottom: 1rem; 
+  }
+  
+
+  /*Footer*/
+
+.contenedorfinal{
+  background-color: black;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+ }
+
+.textofinal{
+  color: white;
+  margin: 20px;
+}
+
+.bi-telephone-fill{
+  color: red;
+  width: 10px;
+  height: 10px;
+}
+
+.contacto{
+  margin: 15px;
+}
+.textocontacto{
+  font-weight: 650;
+  
+}
+
+.bi-envelope-at{
+  color: rgb(52, 127, 249);
+}
+
+.email{
+  margin: 15px;
+}
+
+.textoemail{
+  font-weight: 650;    
+}
+
+.redessociales{
+  margin: 15px;
+}
+
+.sigueme{
+  font-weight: 650;
+}
+
+.media{
+  display: flex;
+  justify-content: space-evenly;  
+  margin: 15px;  
+}
+
+.horario{
+  margin: 15px;
+}
+
+.bi-alarm{
+  color: red;
+}
+
+.textohorario{
+  font-weight: 650;   
+}
