@@ -81,7 +81,7 @@
     .contenedorprincipal{
         background-color: var(--bg-color);
         width: auto;
-        height: 42rem;
+        height: 56rem;
        
         
     }
@@ -93,41 +93,76 @@
         font-size: 40px;
     }
 
-    .entrenadores1, .entrenadores2{
-        display: flex;
-        flex-direction: row;
-        align-content: space-around;
-        justify-content: center;
-        
+ /*ARTICULO 1 */
+    .imagen1{
+        float: left;
+        width: 47%;
+        height: auto;
+        margin-left: 30px;
+              
     }
 
-    .mb-3{
-        text-align: justify;
-        margin: 10px;
-        
-        
-    }
-/* diseño tarjetas
-    .g-0{
-        background-color: var(--bg-second-color);
-        margin: 0;
-        color: var(--text-second-color);
+    .a1{
+        width: 34rem;
+        height: 26.4rem;
     }
 
-    */
-.card-title{
+.card-titlep{
     text-align: center;
     font-size: 24px;
     color: var(--bg-tercia-color);
 }
 
-.card-text{
-    font-size: 16px;
+ /*ARTICULO 2 - 5 */
+.grupo1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    float: right;
+    place-self: center;
+    gap: 1px;
+    
+}
 
+.card-title1{
+    text-align: justify;
+    font-size: 16px;
+    color: var(--bg-tercia-color);
+}
+
+/*SECCIONES*/
+
+.secciones{
+    display: flex;
+    flex-direction: row;
+    float: inline-end;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding-left: 30px;
+    padding-right: 59px;
+}
+
+.card-title2{
+    text-align: center;
+    font-size: 18px;
+    color: var(--bg-second-color)
+}
+
+.is{
+    width: 12rem;
+    height: 10rem;
 }
     
-    
-/*Footer*/
+.mb-3{
+    transition: transform 0.3s ease;
+}
+
+.mb-3:hover {
+    transform: scale(1.08); 
+}
+
+/*Footer
     /*Caja fondo footer*/
     .contenedorfinal{
         background-color: var(--text-color);
@@ -145,7 +180,7 @@
 
     }
    /*caja contenedor redes sociales*/
-    .media{
+   .media{
         display: flex;
         justify-content: space-evenly;  
         margin: 10px;  
@@ -163,3 +198,4 @@
         font-weight: 650;
         color: white;   
     }
+  
