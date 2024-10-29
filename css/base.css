@@ -90,60 +90,6 @@ body {
 /*hasta aquí fue el diseño de la barra de navegación*/
 
 
-/* Sección "¿Quiénes somos?" */
-.quienes-somos {
-    color: white;
-    padding: 5%;
-    margin: 1%;
-}
-
-.container{
-    margin:3%;
-    display:flex;
-    justify-content: space-around;
-
-}
-
-.quienes-somos h1{
-    font-size: 2.5rem;
-    margin-top: 2%
-}
-
-.quienes-somos p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-.quienes-somos img {
-    border-radius: 8px;
-    margin-bottom: 10px;
-    width: 100%;
-    height:20vh;
-    object-fit: cover;
-}
-
-
-.quienes-somos .row {
-    margin-bottom: 20px;
-}
-
-.quienes-somos .row p {
-    text-align: justify;
-    margin-top: 10px;
-}
-
-.quienes-somos .btn {
-    background-color: var(--bg-second-color);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-}
-
-.quienes-somos .btn:hover {
-    background-color: #f05423;
-    transition: background-color 0.3s ease;
-}
 
 /*hasta aquí el diseño del contenido*/
 
