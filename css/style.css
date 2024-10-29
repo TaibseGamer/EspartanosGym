@@ -46,7 +46,7 @@
   /* contenido principal */
 
   h5 {
-    color: var(--bg-second-color); /* Título en naranja */
+    color: var(--bg-second-color); 
   }
   
   .content-main {
@@ -55,7 +55,6 @@
   }
   
   .usuario-comment {
-    background-color: var(--bg-tercia-color); 
     padding: 20px;
     border-radius: 10px;
     height: 100%; 
