@@ -1,0 +1,43 @@
+/* Estilos para el formulario de registro */
+.formulario-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    
+
+  }
+  
+  .formulario-registro .card {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    
+  }
+  
+  .formulario-registro .form-control {
+    border-radius: 5px;
+  }
+  
+  .formulario-registro .btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+
+  
+  
+  /* Media queries para pantallas pequeñas */
+  @media (max-width: 576px) {
+    .formulario-registro {
+      padding: 20px;
+    }
+    
+    .formulario-registro .card {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  

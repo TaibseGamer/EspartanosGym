@@ -19,63 +19,63 @@
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
   </head>
   <body>
-    <!-- Encabezado -->
-    <header class="header container-fluid d-flex align-items-center justify-content-around py-2">
-      <div class="logo">
-        <img src="./img/logo.png" class="img-fluid" alt="Logo Espartanos Gym" />
-      </div>
-      <!-- Menú de navegación -->
-      <nav class="navbar">
-        <ul class="navbar__list navbar-nav d-flex flex-row gap-5">
-          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Entrenadores</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+<!-- Encabezado -->
+<header>
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark py-3">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" alt="Logo" class="d-inline-block align-text-top" style="width: 120px;">
+      </a>
+
+      <!-- Botón de hamburguesa para menú colapsable en móviles -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido colapsable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Menú de navegación centrado -->
+        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entrenadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tienda</a>
+          </li>
         </ul>
-      </nav>
-      <!-- Botones -->
-      <div class=".botones d-flex gap-3">
-        <button class="btn btn-primary">Login</button>
-        <button class="btn btn-secondary">Crear Cuenta</button>
-      </div>
-      <!-- Barra de búsqueda -->
-      <div class="search d-flex ms-3">
-        <input type="text" class="form-control" placeholder="Buscar..." />
-        <button class="btn btn-outline-secondary" type="submit">
-          <i class="bi bi-search"></i>
-        </button>
-      </div>
-    </header>
- <!-- Carrusel -->
- <section class="container-fluid p-0">
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/nt1.jpg" class="d-block w-100" alt="Imagen 1">
-      </div>
-      <div class="carousel-item">
-        <img src="img/nt2.jpg" class="d-block w-100" alt="Imagen 2">
-      </div>
-      <div class="carousel-item">
-        <img src="img/nt3.jpg" class="d-block w-100" alt="Imagen 3">
-      </div>
-      <div class="carousel-item">
-        <img src="img/nt4.jpg" class="d-block w-100" alt="Imagen 4">
-      </div>
-      <div class="carousel-item">
-        <img src="img/nt5.jpg" class="d-block w-100" alt="Imagen 5">
+
+        <!-- Barra de búsqueda -->
+        <form class="d-flex mx-lg-3 my-2 my-lg-0">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="min-width: 250px;">
+          <button class="btn btn-outline-light" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 0a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"/>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Botones de Login y Crear cuenta -->
+        <div class="d-flex justify-content-center align-items-center mt-3 mt-lg-0">
+          <a href="./formLogin.html" class="btn btn-outline-light btn-sm me-2" type="button">Login</a>
+          <a href="" class="btn btn-outline-light btn-sm" type="button">Crea tu cuenta</a>
+        </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
+  </nav>
+</header>
+
+
+
+
+
 
 <!-- contenido principal -->
 <main class="content-main container-fluid py-5">
@@ -180,8 +180,6 @@
       </div>
   </section>
 </main>
-
-<!-- pie de pagina -->
 <!-- pie de página-->
 <footer>
   <div class="contenedorfinal">
