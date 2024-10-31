@@ -11,37 +11,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
-<!-- barra de navegación-->
-    <nav class="contenedorinicial"> 
-              <img class="logo" src="./Img/logo.png" alt="Logo">
-              <a class="inicio" href="#">INICIO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="quienessomos" href="#">QUIÉNES SOMOS</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>        
-              <a class="entrenadores" href="#">ENTRENADORES</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="tienda" href="#">TIENDA</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="login" href="#">LOGIN</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="creacuenta" href="#">CREA TU CUENTA</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>            
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                  
-                </form>
-    </nav>          
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark py-3">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="/Img/logo.png" alt="Logo" style="width: 120px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item mx-3"><a class="nav-link active" href="#">Inicio</a></li>
+              <li class="nav-item mx-3"><a class="nav-link" href="#">¿Quiénes somos?</a></li>
+              <li class="nav-item mx-3"><a class="nav-link" href="./entrenadores.html">Entrenadores</a></li>
+              <li class="nav-item mx-3"><a class="nav-link" href="#">Tienda</a></li>
+          </ul>
+      </div>
+      <form class="d-flex ms-auto search-bar">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-transparent" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 0a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"/>
+              </svg>
+          </button>
+      </form>
+      <button class="btn btn-transparent ms-3" type="button">Login</button>
+      <button class="btn btn-transparent ms-2" type="button">Crea tu cuenta</button>
+  </div>
+</nav>          
           
 </head>      
 

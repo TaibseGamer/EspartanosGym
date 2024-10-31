@@ -1,10 +1,12 @@
+/* Estilos Generales */
+
 *{
     margin:0px;
     box-sizing:border-box;
     font-family: Roboto,sans-serif;
     padding: 0px;
 }
-
+/* Variables de color */
 :root {
     --bg-color: #0B192C;
     --text-color: #000000;
@@ -13,70 +15,80 @@
     --bg-tercia-color: #1E3E62;
   }
 
+/* ========================
+   NAVEGACIÓN
+   ======================== */
+   .navbar {
+    background-color: var(--bg-second-color); /* Fondo de la barra de navegación */
+}
 
-    /* Banner */
-    .contenedorinicial{
-        height: 5em;
+.navbar-nav .nav-link {
+    color: var(--text-second-color); /* Color de los enlaces de navegación */
+    font-size: 1.2rem; /* Tamaño de la fuente de los enlaces */
+    transition: background-color 0.3s; /* Transición suave para el fondo en hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow; /* Color del texto al pasar el mouse */
+}
+
+/* ========================
+   BARRA DE BÚSQUEDA
+   ======================== */
+.search-bar {
+    max-width: 300px; /* Ancho máximo de la barra de búsqueda */
+    width: 100%; /* Ancho completo dentro de su contenedor */
+}
+/* ========================
+   ANIMACIONES
+   ======================== */
+.icon-blink {
+    animation: blink-animation 1.5s infinite alternate; /* Animación de parpadeo */
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1; /* Opacidad completa */
+    }
+    100% {
+        opacity: 0.5; /* Opacidad reducida */
+    }
+}
+/*Media Query*/ 
+@media (max-width: 768px) {
+
+    .imagen1{
         width: 100%;
-        background-color: var(--bg-second-color);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;   
+        height: 100%;
     }
     
-    .logo{
-    
-        width: 6rem;
-        height: 6rem;
+    .mb-3{
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin-left: 30px;
+              
     }
-    
-    .inicio{
-        color: white;
-        text-decoration: none;
-        font-weight: 400
+    .a1{
+        width: 45%;
+        height: auto;
     }
-    
-    .quienessomos{
-        color: white;
-        text-decoration: none;
-        font-weight: 400
+    .netitulo {
+        font-size: 1.8rem;
     }
-    
-    .entrenadores{
-        color: white;
-        text-decoration: none;
-        font-weight: 400
+
+    .grupo1 {
+        grid-template-columns: 1fr; /* Columna única en móviles */
     }
-    
-    .tienda{
-        color: white;
-        text-decoration: none;
-        font-weight: 400
+
+    .secciones {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center; /* Centrar elementos */
     }
-    .login{
-        color: white;
-        text-decoration: none;
-        border-radius: 15%;
-        background-color: var(--text-color);
-        height: 1.5rem;
-        width: 4rem;
-        text-align: center;
-        font-weight: 400
-       
-    }
-    
-    .creacuenta{
-        color: var(--text-second-color);
-        text-decoration: none;
-        border-radius:15%;
-        background-color: var(--bg-color);
-        height: 1.5rem;
-        width: 10rem;
-        text-align: center;
-        font-weight: 400
-    }
-    
-    /*Body*/
+}
+
+
+/*Body*/
 
     .contenedorprincipal{
         background-color: var(--bg-color);
