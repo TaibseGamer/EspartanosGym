@@ -1,0 +1,49 @@
+:root {
+    --bg-color: #0B192C;
+    --text-color: #000000;
+    --bg-second-color: #FF6500;
+    --text-second-color: #ffff;
+    --bg-tercia-color: #1E3E62;
+  }
+/* Fondo de la página */
+body {
+ 
+    height: 100vh;
+  }
+  
+  /* Contenido centrado en la página */
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/bg-login.jpg');
+    background-size: cover;
+  }
+  
+  /* Estilos para el formulario */
+  .card {
+    background-color: #222;
+    border-radius: 10px;
+    color: var(--text-color);
+    
+  }
+  
+  .card .form-label {
+    color: var(--text-color);
+  }
+  
+  .btn-primary {
+    background-color: #f46b10;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff7c00;
+  }
+  
+  .form-check-label {
+    color: var(--bg-color);
+  }
+  
+  
