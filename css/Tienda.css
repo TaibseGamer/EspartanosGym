@@ -1,0 +1,211 @@
+/* ========================
+   VARIABLES DE COLOR
+   ======================== */
+   :root {
+    --bg-color: #0B192C; /* Color de fondo principal */
+    --text-color: #000000; /* Color de texto principal */
+    --bg-second-color: #FF6500; /* Color de fondo secundario (navbar y botones) */
+    --text-second-color: #FFFFFF; /* Color de texto secundario */
+}
+
+/* ========================
+   ESTILOS GENERALES
+   ======================== */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente general de la página */
+    background-color: var(--bg-color); /* Fondo de la página */
+    color: var(--text-second-color); /* Color de texto de la página */
+}
+
+/* ========================
+   NAVEGACIÓN
+   ======================== */
+.navbar {
+    background-color: var(--bg-second-color); /* Fondo de la barra de navegación */
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-second-color); /* Color de los enlaces de navegación */
+    font-size: 1.2rem; /* Tamaño de la fuente de los enlaces */
+    transition: background-color 0.3s; /* Transición suave para el fondo en hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow; /* Color del texto al pasar el mouse */
+}
+
+/* ========================
+   BARRA DE BÚSQUEDA
+   ======================== */
+.search-bar {
+    max-width: 300px; /* Ancho máximo de la barra de búsqueda */
+    width: 100%; /* Ancho completo dentro de su contenedor */
+}
+
+/* ========================
+   CAJA DE PRODUCTO
+   ======================== */
+.product-box {
+    border: 1px solid #ddd; /* Borde de la caja del producto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco para el contenedor de cada producto */
+    transition: box-shadow 0.3s, transform 0.3s; /* Transiciones suaves */
+    overflow: hidden; /* Evita que el zoom salga del contenedor */
+}
+
+.product-box img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    max-height: 200px; /* Altura máxima de la imagen */
+    transition: transform 0.3s; /* Transición suave para el zoom */
+}
+
+.product-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+    transform: scale(1.05); /* Escala del contenedor al pasar el mouse */
+}
+
+.product-box:hover img {
+    transform: scale(1.1); /* Efecto de zoom en la imagen al pasar el mouse */
+}
+
+/* ========================
+   ESTILOS DEL TEXTO DEL PRODUCTO
+   ======================== */
+.product-box h5,
+.product-box p {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    color: var(--text-second-color); /* Color del texto */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* ========================
+   ESTILO DEL PRECIO
+   ======================== */
+.product-box p strong {
+    font-weight: bold; /* Negrita para el precio */
+    text-decoration: underline; /* Subrayado opcional */
+    color: #FF6500; /* Color del precio */
+}
+
+/* ========================
+   TÍTULOS SECCIONES
+   ======================== */
+.section-title {
+    text-align: center; /* Centrado del título */
+    font-size: 2.5rem; /* Tamaño del título principal */
+    margin: 20px 0; /* Margen superior e inferior */
+    font-weight: bold; /* Negrita */
+    color: var(--text-second-color); /* Color del texto */
+}
+
+.sub-title {
+    text-align: center; /* Centrado del subtítulo */
+    font-size: 2rem; /* Tamaño del subtítulo */
+    margin: 10px 0; /* Margen superior e inferior */
+    font-weight: bold; /* Negrita */
+    color: var(--text-second-color); /* Color del texto */
+}
+
+/* ========================
+   CARRUSEL
+   ======================== */
+.carousel-item img {
+    width: 100%; /* Mantiene el ancho completo del contenedor */
+    height: auto; /* Establece una altura automática para mantener proporciones */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+    transition: transform 0.3s; /* Transición suave para el zoom */
+}
+
+.carousel-item:hover img {
+    transform: scale(1.1); /* Efecto de zoom en la imagen del carrusel */
+}
+
+/* ========================
+   INFORMACIÓN DE PROMOCIÓN
+   ======================== */
+.promotion-info {
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 20px; /* Espaciado desde el fondo */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Ajuste para centrar el elemento */
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+    color: #fff; /* Color del texto blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrado del texto */
+    width: 90%; /* Ancho ajustado para centrado */
+}
+
+/* ========================
+   BOTONES
+   ======================== */
+.btn-transparent {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    color: var(--text-second-color); /* Color del texto */
+    border: 1px solid var(--bg-second-color); /* Borde con color secundario */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+.btn-transparent:hover {
+    background-color: rgba(255, 119, 0, 0.3); /* Fondo al pasar el mouse */
+    color: var(--bg-color); /* Color del texto al pasar el mouse */
+}
+
+/* ========================
+   BOTÓN OSCURO PERSONALIZADO
+   ======================== */
+.btn-dark {
+    background-color: var(--bg-second-color); /* Fondo del botón */
+    border: none; /* Sin borde */
+    color: var(--text-second-color); /* Color del texto */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.btn-dark:hover {
+    background-color: rgba(255, 119, 0, 0.8); /* Fondo al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    color: var(--bg-color); /* Color del texto al pasar el mouse */
+}
+
+/* ========================
+   FOOTER
+   ======================== */
+footer {
+    background: radial-gradient(circle, #000000, #0a0a0a, #000000); /* Fondo degradado */
+    font-family: 'Roboto', sans-serif; /* Fuente del footer */
+    color: #fff; /* Color del texto */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Sombra del footer */
+    padding: 40px 0; /* Espaciado interno */
+}
+
+footer a {
+    color: #fff; /* Color de los enlaces en el footer */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+footer a:hover {
+    color: #ff6500; /* Color de los enlaces al pasar el mouse */
+    transform: scale(1.2); /* Efecto de escala al pasar el mouse */
+}
+
+/* ========================
+   ANIMACIONES
+   ======================== */
+.icon-blink {
+    animation: blink-animation 1.5s infinite alternate; /* Animación de parpadeo */
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1; /* Opacidad completa */
+    }
+    100% {
+        opacity: 0.5; /* Opacidad reducida */
+    }
+}
