@@ -99,19 +99,19 @@ body {
 
 .misionVision h1 {
     text-align: center;
-    color: var(--text-second-color);
-    margin-top: -10%;
+    color: var(--bg-second-color);
+    
 }
 
 .misionVision h2 {
     text-align: left;
-    color: var(--text-second-color);
+    color: var(--bg-second-color);
     margin-bottom: 5%;
 }
 
 .misionVision .row {
     margin-top: 30px;
-
+    gap: 5%;
 }
 
 .misionVision p {
@@ -119,10 +119,11 @@ body {
     font-size: 1.2rem;
     line-height: 1.6rem;
     margin-bottom: 5%;
+    text-align: left;
 }
 
 .misionVision .row .card{
-    background-color: var(--bg-second-color);
+    background-color: var(--text-second-color);
     border-radius: 10px;
 }
 
@@ -134,7 +135,7 @@ body {
 }
 
 .testimonios .card {
-    background-color: var(--bg-second-color);
+    background-color: var(--text-second-color);
     border: none;
     border-radius: 10px;
     width: 40vw;
@@ -147,7 +148,7 @@ body {
 }
 
 .testimonios h1{
-    color: var(--text-second-color);
+    color: var(--bg-second-color);
     font-size: 3rem;
 }
 
@@ -157,7 +158,6 @@ body {
     .contenedorfinal{
         background-color: var(--text-color);
         width: 100%;
-        height: vh;
         display: flex;
         align-content: center;
         justify-content: center;
