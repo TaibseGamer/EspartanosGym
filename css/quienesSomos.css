@@ -1,0 +1,57 @@
+/* Estilos para la sección "¿Quiénes somos?" */
+.quienes-somos .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quienes-somos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .quienes-somos p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .quienes-somos .row {
+    display: flex;
+    align-items: stretch; /* Alinea las columnas para que tengan la misma altura */
+  }
+  
+  .quienes-somos .col-lg-6:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Estilos para las tarjetas con imágenes */
+  .quienes-somos .card {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .quienes-somos .card img {
+    width: 100%;
+    height: 180px; /* Altura uniforme para las imágenes */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .quienes-somos .card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #ff5733; /* Color de acento */
+  }
+  
+  .quienes-somos .card img:hover {
+    transform: scale(1.05);
+  }
+  

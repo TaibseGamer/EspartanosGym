@@ -1,0 +1,25 @@
+.misionVision {
+    padding: 30px 0;
+  }
+  
+  .areas {
+    position: relative; /* Posicionamiento relativo para el carrusel */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.carousel-inner {
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 400px; /* Ajusta la altura según tus necesidades */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Mantiene la proporción de las imágenes */
+    height: 100%; /* Asegura que las imágenes ocupen el 100% de la altura del contenedor */
+    width: 100%; /* Asegura que las imágenes ocupen el 100% del ancho del contenedor */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor legibilidad */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+}
