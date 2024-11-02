@@ -4,66 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios Deportivos</title>
+    <!-- estilos -->
+     <link rel="stylesheet" href="./css/Tienda.css">
+     <link rel="stylesheet" href="./css/style.css">
     <!-- Vinculación con Bootstrap y Google Fonts -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Vinculación con el archivo CSS -->
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="./css/Tienda.css">
+    <!-- Vinculación con el archivo CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-    <!-- Encabezado -->
-<header>
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-md navbar-dark py-3">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-          <img src="/Img/Tienda/Logos/logo.png" alt="Logo" class="d-inline-block align-text-top" style="width: 120px;">
-        </a>
-  
-        <!-- Botón de hamburguesa para menú colapsable en móviles -->
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <!-- Contenido colapsable -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- Menú de navegación centrado -->
-          <ul class="navbar-nav mx-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">¿Quiénes somos?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./entrenadores.html">Entrenadores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./Tienda.html">Tienda</a>
-            </li>
-          </ul>
-  
-          <!-- Barra de búsqueda -->
-          <form class="d-flex mx-lg-3 my-2 my-lg-0">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="min-width: 250px;">
-            <button class="btn btn-outline-light" type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 0a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"/>
-              </svg>
+    <header>    
+        <!-- Barra de Navegación -->
+        <nav class="navbar navbar-expand-md navbar-dark py-3">
+          <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img
+                src="./img/logo.png"
+                alt="Logo"
+                class="d-inline-block align-text-top"
+                style="width: 120px"
+              />
+            </a>
+    
+            <!-- Botón de hamburguesa para menú colapsable en móviles -->
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
             </button>
-          </form>
-  
-          <!-- Botones de Login y Crear cuenta -->
-          <div class="d-flex justify-content-center align-items-center mt-3 mt-lg-0">
-            <button class="btn btn-outline-light btn-sm me-2" type="button">Login</button>
-            <button class="btn btn-outline-light btn-sm" type="button">Crea tu cuenta</button>
+    
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <!-- Menú de navegación centrado -->
+              <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./quienesSomos.html">¿Quiénes somos?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./entrenadores.html">Entrenadores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Tienda.html">Tienda</a>
+                </li>
+              </ul>
+    
+              <!-- Barra de búsqueda -->
+              <form class="d-flex mx-lg-3 my-2 my-lg-0">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                  style="min-width: 250px"
+                />
+                <button class="btn btn-outline-light" type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="white"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 0a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"
+                    />
+                  </svg>
+                </button>
+              </form>
+    
+              <!-- Botones de Login y Crear cuenta -->
+              <div
+                class="d-flex justify-content-center align-items-center mt-3 mt-lg-0"
+              >
+                <a
+                  href="./formLogin.html"
+                  class="btn btn-outline-light btn-sm me-2"
+                  type="button"
+                  >Login</a
+                >
+                <a
+                  href="./formCuenta.html"
+                  class="btn btn-outline-light btn-sm "
+                  type="button"
+                  >Crea tu cuenta</a
+                >
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+        </nav>
+      
+    </header>
   
     <!-- Título principal -->
     <div class="container">
@@ -297,20 +344,38 @@
     </div>
 </div>
 
-
-    <!-- Footer -->
-    <footer class="text-center text-white">
-        <div class="container">
-            <div class="mb-3">
-                <p><i class="bi bi-telephone me-2"></i>+57 315 23 290</p>
-                <p><i class="bi bi-envelope me-2"></i>admin@espartangym.com</p>
-                <p><i class="bi bi-clock me-2"></i>Lunes a Viernes: 8am - 6pm</p>
-            </div>
-            <div class="mb-3">
-                <p>© 2024 Espartan Gym. Todos los derechos reservados.</p>
-            </div>
+<!-- pie de página-->
+<footer>
+    <div class="contenedorfinal">
+      <div class="textofinal">
+        <div class="contacto">
+         <i class="bi bi-telephone-inbound"></i>
+        <span class="textocontacto">    Contacto</span>
+        <span >+ 34 123 456 789</span>
         </div>
-    </footer>
+  
+      <div class="email">
+        <i class="bi bi-envelope"></i>
+        <span class="textoemail">Email</span>
+        <span>info@spartangym.com</span>  </div> 
+      
+      <div class="redessociales"></div>
+        <i class="bi bi-globe"></i>
+        <span class="sigueme">Síguenos en nuestras redes sociales:</span> </br>
+        <div class="media">
+          <a target="_blank" href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+          <a target="_blank" href="https://x.com/"><i class="bi bi-twitter"></i></a>
+      </div>
+  
+      <div class="horario">
+        <i class="bi bi-alarm"></i>
+        <span class="textohorario">Horario:</span>
+        <span>Lunes a Viernes: 6:00 - 22:00 | Sábado: 8:00 - 18:00 </span>
+      </div> 
+    </div>
+  </footer>
+
 
     <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
