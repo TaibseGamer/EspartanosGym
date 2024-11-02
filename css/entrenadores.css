@@ -17,6 +17,14 @@
     --bg-tercia-color: #1E3E62;
   }
 
+  .header {
+    background-color: var(--bg-second-color);
+    padding: 20px;
+  }
+  .logo img {
+    width: 120px;
+  }
+
 
 /* ========================
    NAVEGACIÓN
@@ -40,22 +48,7 @@
    ======================== */
 .search-bar {
     max-width: 300px; /* Ancho máximo de la barra de búsqueda */
-    width: 100%; /* Ancho completo dentro de su contenedor */
-}
-/* ========================
-   ANIMACIONES
-   ======================== */
-.icon-blink {
-    animation: blink-animation 1.5s infinite alternate; /* Animación de parpadeo */
-}
-
-@keyframes blink-animation {
-    0% {
-        opacity: 1; /* Opacidad completa */
-    }
-    100% {
-        opacity: 0.5; /* Opacidad reducida */
-    }
+    width: 100%; /* Ancho completo dentro de su contenedor */
 }
     
     /*Body*/
