@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conoce Más</title>
+    <!-- Vinculación con Bootstrap y Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/conoceMas.css"> <!-- Vinculación con el archivo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+<header>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-md navbar-dark py-3">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="Img/logo.png" alt="Logo" class="d-inline-block align-text-top" style="width: 120px;">
+        </a>
+  
+        <!-- Botón de hamburguesa para menú colapsable en móviles -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Contenido colapsable -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Menú de navegación centrado -->
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienesSomos.html">¿Quiénes somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entrenadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tienda</a>
+            </li>
+          </ul>
+  
+          <!-- Barra de búsqueda -->
+          <form class="d-flex mx-lg-3 my-2 my-lg-0">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="min-width: 250px;">
+            <button class="btn btn-outline-light" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 0a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"/>
+              </svg>
+            </button>
+          </form>
+  
+          <!-- Botones de Login y Crear cuenta -->
+          <div class="d-flex justify-content-center align-items-center mt-3 mt-lg-0">
+            <button class="btn btn-outline-light btn-sm me-2" type="button">Login</button>
+            <button class="btn btn-outline-light btn-sm" type="button">Crea tu cuenta</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+    <!-- contenido principal -->
+  <main class="main">
+
+    <section class="general pt-2">
+        <section class="misionVision container mt-3 d-flex flex-column justify-content-center align-items-center">
+
+            <h1>Nuestra Misión y Visión</h1>
+    
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h2>Misión</h2>
+                    <p>En Espartanos Gym, nuestra misión es transformar la vida de nuestros miembros a través de un enfoque integral que combina ejercicio, nutrición, y apoyo emocional. Nos esforzamos por ofrecer un espacio donde todos se sientan bienvenidos y motivados para alcanzar su mejor versión.</p>
+    
+                    <h2>Visión</h2>
+                    <p>Ser el gimnasio líder en nuestra comunidad, reconocido no solo por nuestros programas de entrenamiento, sino también por nuestra dedicación a la salud integral y al bienestar mental. Queremos que cada miembro se sienta parte de una familia que le apoya y le inspira.</p>
+                </div>
+                <div class=" img-representativa card p-4 col-md-5 d-flex justify-content-center">
+                    <img src="Img/Blog/maratones.jpg" alt="Imagen Representativa">
+                </div>
+            </div>
+        </section>
+    
+        <section class="testimonios mt-5">
+            <h1 class="text-center">Testimonios</h1>
+    
+            <div id="carouselExampleFade" class="carousel slide carousel-fade mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="card p-3 text-center">
+                                <img src="Img/pexels-jonathanborba-3076510.jpg" alt="pesa">
+                                <p>Testimonio 1: "Este gimnasio cambió mi vida!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="card p-3 text-center">
+                                <img src="Img/pexels-cesar-galeao-1673528-3253498.jpg" alt="lagartijas">
+                                <p>Testimonio 2: "Me siento parte de una familia."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="card p-3 text-center">
+                                <img src="Img/pexels-jonathanborba-3076516.jpg" alt="abdominales">
+                                <p>Testimonio 3: "Un ambiente motivador y acogedor."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    
+        </section>
+    </section>
+
+  </main>
+
+  <!-- pie de página-->
+  <footer>
+    <div class="contenedorfinal">
+      <div class="textofinal">
+        <div class="contacto">
+          <i class="bi bi-telephone-inbound"></i>
+          <span class="textocontacto"> Contacto</span>
+          <span>+ 34 123 456 789</span>
+        </div>
+
+        <div class="email">
+          <i class="bi bi-envelope"></i>
+          <span class="textoemail">Email</span>
+          <span>info@spartangym.com</span>
+        </div>
+
+        <div class="redessociales"></div>
+        <i class="bi bi-globe"></i>
+        <span class="sigueme">Síguenos en nuestras redes sociales:</span> </br>
+        <div class="media">
+          <a target="_blank" href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+          <a target="_blank" href="https://x.com/"><i class="bi bi-twitter"></i></a>
+        </div>
+
+        <div class="horario">
+          <i class="bi bi-alarm"></i>
+          <span class="textohorario">Horario:</span>
+          <span>Lunes a Viernes: 6:00 - 22:00 | Sábado: 8:00 - 18:00 </span>
+        </div>
+      </div>
+  </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
