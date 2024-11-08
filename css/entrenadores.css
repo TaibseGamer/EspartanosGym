@@ -26,6 +26,7 @@
   }
 
 
+
 /* ========================
    NAVEGACIÓN
    ======================== */
@@ -48,8 +49,11 @@
    ======================== */
 .search-bar {
     max-width: 300px; /* Ancho máximo de la barra de búsqueda */
-    width: 100%; /* Ancho completo dentro de su contenedor */
+    width: 100%; /* Ancho completo dentro de su contenedor */
 }
+
+
+
     
     /*Body*/
 
@@ -98,6 +102,16 @@
 
 .card-text{
     font-size: 16px;
+
+}
+
+
+@media (max-width: 600px) {
+    .contenedorprimario{
+        height: 225rem;
+    
+    
+    }
 
 }
     
