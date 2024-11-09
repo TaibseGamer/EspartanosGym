@@ -142,57 +142,6 @@ body {
     width: 90%; /* Ancho ajustado para centrado */
 }
 
-/* ========================
-   BOTONES
-   ======================== */
-.btn-transparent {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
-    color: var(--text-second-color); /* Color del texto */
-    border: 1px solid var(--bg-second-color); /* Borde con color secundario */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
-}
-
-.btn-transparent:hover {
-    background-color: rgba(255, 119, 0, 0.3); /* Fondo al pasar el mouse */
-    color: var(--bg-color); /* Color del texto al pasar el mouse */
-}
-
-/* ========================
-   BOTÓN OSCURO PERSONALIZADO
-   ======================== */
-.btn-dark {
-    background-color: var(--bg-second-color); /* Fondo del botón */
-    border: none; /* Sin borde */
-    color: var(--text-second-color); /* Color del texto */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
-}
-
-.btn-dark:hover {
-    background-color: rgba(255, 119, 0, 0.8); /* Fondo al pasar el mouse */
-    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
-    color: var(--bg-color); /* Color del texto al pasar el mouse */
-}
-
-/* ========================
-   FOOTER
-   ======================== */
-footer {
-    background: radial-gradient(circle, #000000, #0a0a0a, #000000); /* Fondo degradado */
-    font-family: 'Roboto', sans-serif; /* Fuente del footer */
-    color: #fff; /* Color del texto */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Sombra del footer */
-    padding: 40px 0; /* Espaciado interno */
-}
-
-footer a {
-    color: #fff; /* Color de los enlaces en el footer */
-    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
-}
-
-footer a:hover {
-    color: #ff6500; /* Color de los enlaces al pasar el mouse */
-    transform: scale(1.2); /* Efecto de escala al pasar el mouse */
-}
 
 /* ========================
    ANIMACIONES

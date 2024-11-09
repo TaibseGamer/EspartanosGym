@@ -1,0 +1,221 @@
+/* Estilos base */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #0B192C;
+    --text-color: #000000;
+    --bg-second-color: #FF6500;
+    --text-second-color: #FFFFFF;
+    --bg-tercia-color: #1E3E62;
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-second-color);
+}
+/* ========================
+   NAVEGACIÓN
+   ======================== */
+.navbar {
+    background-color: var(--bg-second-color);
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-second-color);
+    font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow;
+}
+
+/* ========================
+   BARRA DE BÚSQUEDA
+   ======================== */
+.search-bar {
+    max-width: 300px; /* Ancho máximo de la barra de búsqueda */
+    width: 100%; /* Ancho completo dentro de su contenedor */
+}
+/* ========================
+   ANIMACIONES
+   ======================== */
+.icon-blink {
+    animation: blink-animation 1.5s infinite alternate; /* Animación de parpadeo */
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1; /* Opacidad completa */
+    }
+    100% {
+        opacity: 0.5; /* Opacidad reducida */
+    }
+};
+
+/* ========================
+   Botones
+   ======================== */
+.btn-transparent {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-second-color);
+    border: 1px solid var(--bg-second-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-transparent:hover {
+    background-color: rgba(255, 119, 0, 0.3);
+    color: var(--bg-color);
+}
+
+/* Botón oscuro personalizado */
+.btn-dark {
+    background-color: var(--bg-second-color);
+    border: none;
+    color: var(--text-second-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: rgba(255, 119, 0, 0.8);
+    transform: scale(1.05);
+    color: var(--bg-color);
+}
+
+  /*hasta aquí fue el diseño de la barra de navegación*/
+
+  /* ========================
+    Estilos generales
+  ======================== */
+
+  
+  /* Título principal */
+  h1 {
+    font-weight: bold;
+    color: var(--bg-second-color);
+    margin-bottom: 5%;
+    font-size: 40px; /* Tamaño del título */
+  }
+  
+  /* Contenedor de Tabs */
+  .nav-tabs .nav-link {
+    background-color: var(--text-second-color);
+    color: var(--text-color); /* Color de las tabs no seleccionadas */
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color:var(--bg-second-color); /* Fondo azul para tab activa */
+    color: var(--text-second-color); /* Texto blanco para tab activa */
+  }
+  
+  /* Contenido de las tabs */
+  .tab-content {
+    background-color:#c1c7cf; /* Fondo blanco para cada tab */
+    border: 1px solid #ddd; /* Borde para separar visualmente */
+    border-top: none; /* Sin borde superior */
+    padding: 3%;
+    border-radius: 0 0 8px 8px; /* Bordes redondeados solo abajo */
+    
+  }
+  
+  /* Contenedor de contenido */
+  .d-flex {
+    gap: 20px; /* Espacio entre imagen y texto */
+  }
+  
+  /* Card para la imagen */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    border: none; /* Sin bordes */
+    background-color:var(--text-second-color); /* Fondo ligeramente gris */
+  }
+  
+  .card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+  
+  /* Información del programa */
+  .info {
+    color: var(--text-second-color); /* Texto blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
+    font-size: 18px; /* Tamaño del texto */
+  }
+  
+  .info h2 {
+    color:var(--bg-second-color); /* Títulos secundarios en amarillo */
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 32px; 
+  }
+  
+  .info ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .info ul li {
+    margin-bottom: 8px;
+  }
+  
+  .info strong {
+    color: var(--bg-second-color); /* Resaltar información clave */
+  }
+  
+  
+  
+
+/*hasta aquí el diseño del contenido*/
+
+    /*Caja fondo footer*/
+    .contenedorfinal{
+        background-color: var(--text-color);
+        width: 100%;
+        height: vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 3%;
+    }
+     /*Caja texto footer*/
+    .textofinal{
+       margin: 10px;
+       color: var(--text-second-color);
+
+    }
+   /*caja contenedor redes sociales*/
+   .media{
+        display: flex;
+        justify-content: space-evenly;  
+        margin: 10px;  
+    }
+    /*espacio entre cajas del footer*/
+    .horario, .redessociales, .email, .contacto{
+        margin: 10px;
+    }
+    /*color ícono reloj*/
+    .bi-alarm{
+        color: red;
+    }
+   /*estilos de texto*/
+    .textohorario,  .sigueme, .textoemail, .textocontacto{
+        font-weight: 650;
+        color: white;
+     }
+/*hasta aquí el diseño del footer*/

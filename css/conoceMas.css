@@ -1,25 +1,73 @@
-.misionVision {
-    padding: 30px 0;
-  }
-  
-  .areas {
-    position: relative; /* Posicionamiento relativo para el carrusel */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde */
-}
 
-.carousel-inner {
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    height: 400px; /* Ajusta la altura según tus necesidades */
-}
+/*main*/
+    .main{
+        padding: 5%;
+        height: auto;
+        margin: auto;
+    
+    }
 
-.carousel-item img {
-    object-fit: cover; /* Mantiene la proporción de las imágenes */
-    height: 100%; /* Asegura que las imágenes ocupen el 100% de la altura del contenedor */
-    width: 100%; /* Asegura que las imágenes ocupen el 100% del ancho del contenedor */
-}
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor legibilidad */
-    color: white; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-}
+    .misionVision h1 {
+        text-align: center;
+        color: var(--bg-second-color);
+        font-size: 40px;
+
+    }
+
+    .misionVision h2 {
+        text-align: left;
+        color: var(--bg-second-color);
+        margin-bottom: 5%;
+        font-size: 32px;
+    }
+
+    .misionVision .row {
+        margin-top: 30px;
+        gap: 5%;
+    }
+
+    .misionVision p {
+        color: var(--text-second-color);
+        font-size:18px;
+        line-height: 1.6rem;
+        margin-bottom: 5%;
+        text-align: justify;
+    }
+
+    .misionVision .row .card{
+        background-color: var(--text-second-color);
+        border-radius: 10px;
+ 
+    }
+
+
+    .img-representativa img {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .testimonios .card {
+        background-color: var(--text-second-color);
+        border: none;
+        border-radius: 10px;
+        width: 40vw;
+
+    }
+
+    .testimonios p {
+        font-size:18px;
+        text-align: center;
+        color: var(--text-color);
+        margin: 2%;
+    }
+
+    .testimonios h1{
+        color: var(--bg-second-color);
+        font-size: 3rem;
+        font-size: 40px;
+    }
+
+
+
