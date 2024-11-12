@@ -12,59 +12,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 </head>
 <body>
-
-    <!-- Encabezado -->
+<!-- Encabezado -->
 <header>
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-md navbar-dark py-3">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-          <img src="Img/logo.png" alt="Logo" class="d-inline-block align-text-top" style="width: 120px;">
-        </a>
-  
-        <!-- Botón de hamburguesa para menú colapsable en móviles -->
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <!-- Contenido colapsable -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- Menú de navegación centrado -->
-          <ul class="navbar-nav mx-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quienesSomos.html">¿Quiénes somos?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Entrenadores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tienda</a>
-            </li>
-          </ul>
-  
-          <!-- Barra de búsqueda -->
-          <form class="d-flex mx-lg-3 my-2 my-lg-0">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="min-width: 250px;">
-            <button class="btn btn-outline-light" type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 0a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"/>
-              </svg>
-            </button>
-          </form>
-  
-          <!-- Botones de Login y Crear cuenta -->
-          <div class="d-flex justify-content-center align-items-center mt-3 mt-lg-0">
-            <button class="btn btn-outline-light btn-sm me-2" type="button">Login</button>
-            <button class="btn btn-outline-light btn-sm" type="button">Crea tu cuenta</button>
-          </div>
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark py-3">
+    <div class="container-sm">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/logo.png" alt="Logo" class="d-inline-block align-text-top" style="width: 120px;">
+      </a>
+
+      <!-- Botón de hamburguesa para menú colapsable en móviles -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido colapsable -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Menú de navegación centrado -->
+        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./quienesSomos.html">¿Quiénes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./entrenadores.html">Entrenadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Tienda.html">Tienda</a>
+          </li>
+        </ul>
+
+        <!-- Barra de búsqueda -->
+        <form class="d-flex mx-lg-3 my-2 my-lg-0">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="min-width: 250px;">
+          <button class="btn btn-outline-light" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 0a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"/>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Botones de Login y Crear cuenta -->
+        <div class="d-flex justify-content-center align-items-center mt-3 mt-lg-0">
+          <a href="./formLogin.html" class="btn btn-outline-light btn-sm me-2" type="button">Login</a>
+          <a href="" class="btn btn-outline-light btn-sm" type="button">Crea tu cuenta</a>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
   
     <!-- contenido principal -->
   <main class="main">

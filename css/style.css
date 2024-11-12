@@ -17,10 +17,7 @@
     color: var(--text-second-color); 
 
   }
-  img {
-    width: 100%;
-    height: auto;
-  }
+
   .header {
     background-color: var(--bg-second-color);
     padding: 20px;
