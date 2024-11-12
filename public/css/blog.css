@@ -1,0 +1,142 @@
+
+/* Variables de color */
+:root {
+    --bg-color: #0B192C;
+    --text-color: #000000;
+    --bg-second-color: #FF6500;
+    --text-second-color: #ffff;
+    --bg-tercia-color: #1E3E62;
+  }
+
+    /*Body*/
+
+    .contenedorprincipal{
+        background-color: var(--bg-color);
+        width: auto;
+        height: 56rem;
+       
+        
+    }
+    
+    .netitulo{
+        color: var(--bg-second-color);
+        text-align: center;
+        padding: .5rem;
+        font-size: 40px;
+    }
+
+ /*ARTICULO 1 */
+    .imagen1{
+        float: left;
+        width: 47%;
+        height: auto;
+        margin-left: 30px;
+              
+    }
+
+    .a1{
+        width: 34rem;
+        height: 26.4rem;
+    }
+
+.card-titlep{
+    text-align: center;
+    font-size: 24px;
+    color: var(--bg-tercia-color);
+}
+
+ /*ARTICULO 2 - 5 */
+.grupo1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    float: right;
+    place-self: center;
+    gap: 1px;
+    
+}
+
+.card-title1{
+    text-align: justify;
+    font-size: 16px;
+    color: var(--bg-tercia-color);
+}
+
+/*SECCIONES*/
+
+.secciones{
+    display: flex;
+    flex-direction: row;
+    float: inline-end;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding-left: 30px;
+    padding-right: 59px;
+}
+
+.card-title2{
+    text-align: center;
+    font-size: 18px;
+    color: var(--bg-second-color)
+}
+
+.is{
+    width: 12rem;
+    height: 10rem;
+}
+    
+.mb-3{
+    transition: transform 0.3s ease;
+}
+
+.mb-3:hover {
+    transform: scale(1.08); 
+}
+
+
+
+@media (max-width: 600px) {
+    .contenedorprincipal{
+        height: 45rem;       
+    }
+
+    .imagen1{
+        width: 90%;
+        
+
+    }
+
+    .a1 {
+        width: 70%;
+        height: 70%;
+        justify-content: center;
+    }
+    
+    .grupo1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        float: right;
+        place-self: center;
+        gap: 2px;
+        padding:15px;
+    
+
+    }
+   
+    .secciones{
+        width: 100%
+    }
+
+    .is{
+        display: none;
+    }
+
+    .t1{
+    font-size: 10px;
+    color: var(--bg-second-color);
+}
+
+}
+    

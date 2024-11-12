@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Usuario</title>
+    <link rel="stylesheet" href="./css/perfilUsuario.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">       
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+</head>     
+<body>
+  <header>    
+      <!-- Barra de Navegación -->
+      <nav class="navbar navbar-expand-md navbar-dark py-3">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/logo.png"
+              alt="Logo"
+              class="d-inline-block align-text-top"
+              style="width: 120px"
+            />
+          </a>
+  
+          <!-- Botón de hamburguesa para menú colapsable en móviles -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Contenido colapsable -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Menú de navegación centrado -->
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quienesSomos.html">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./entrenadores.html">Entrenadores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Tienda.html">Tienda</a>
+              </li>
+            </ul>
+  
+            <!-- Barra de búsqueda -->
+            <form class="d-flex mx-lg-3 my-2 my-lg-0">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+                style="min-width: 250px"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="white"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 0a5.5 5.5 0 1 1 7.778-7.778 5.5 5.5 0 0 1-7.778 7.778z"
+                  />
+                </svg>
+              </button>
+            </form>
+  
+            <!-- Botones de Login y Crear cuenta -->
+            <div
+              class="d-flex justify-content-center align-items-center mt-3 mt-lg-0"
+            >
+              <a
+                href="./formLogin.html"
+                class="btn btn-outline-light btn-sm me-2"
+                type="button"
+                >Login</a
+              >
+              <a
+                href="./formCuenta.html"
+                class="btn btn-outline-light btn-sm active"
+                type="button"
+                >Crea tu cuenta</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+  </header>
+<main>
+<!-- sección bloc-->
+
+<section class="contenedorprimario">
+  <div class="grid text-center">
+      <div class="g-col-3 g-start-2">
+          <h3 class="titulop">María Cifuentes</h3>
+          <img class="foto1" src="./Img/Perfilu/p1.jpg" alt="foto">
+      </div>                
+    </div>
+  
+    <div class="grid text-center2">
+      <div class="g-col-3 g-start-2">
+          <h4 class="titulo">Datos Demográficos</h4>
+          <p>
+              <ul>
+                  <li><span>Edad:</span> 24 años</li><br>
+                  <li><span>Plan:</span> Estándar</li><br>
+                  <li><span>Localización:</span> Bogotá, Colombia</li><br>
+                  <li><span>Estado civil:</span> Casada</li><br>
+                  <li><span>Ocupación:</span> Desarrolladora</li><br>
+                  <li><span>Intereses:</span> Deportes, libros, juegos</li><br>
+              </ul>
+          </p>
+      </div>                
+  </div>
+      
+
+  <div class="grid text-center3">
+      <div class="g-col-3 g-start-2">
+          <h4 class="titulo">Perfil Usuario</h4>
+              <p>María busca tonificar su cuerpo y mejorar su fuerza general. Se ha propuesto perder un poco de grasa corporal y ganar masa muscular, asistiendo al gimnasio al menos cuatro veces por semana.</p>
+              <p>Dentro de sus hábitos de entrenamiento destaca el entrenamiento de fuerza, ya que se enfoca en ejercicios con pesas y circuitos, incluyendo sentadillas, press de hombros y peso muerto. María tambien disfruta realizar sesiones de cardio moderado, como correr o trotar, durante 30-45 minutos, tres veces a la semana.</p>
+              <p>Por últmo, le gusta tomar clases grupales como Zumba y Pilates, que le permiten mantener su motivación y socializar con otras personas.</p>
+      </div>                
+  </div>
+
+  <div class="grid text-center4">
+      <div class="g-col-3 g-start-2">
+          <h4 class="titulo">Metas</h4>
+              <p>
+                  <ul>                            
+                  <li>Aumentar la fuerza.</li>
+                  <li>Mejorar la resistencia.</li>
+                  <li>Tonificar el cuerpo.</li>
+                  <li>Completar una clase de HIIT.</li>
+                  </ul>
+              </p>
+                 
+      </div>                
+  </div>
+
+  <div class="grid text-center5">
+      <div class="g-col-3 g-start-5">
+          <h4 class="titulo">Puntos acumulados</h4>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg>
+              <p class="puntos"> Tienes 980 Spartanspuntos</p>                   
+              
+                 
+      </div>                
+  </div>
+
+  <div class="grid text-center6">
+      <div class="g-col-3 g-start-2">
+          <h4 class="titulo">Necesidades</h4>
+              <p>
+                  <ul>                            
+                  <li><span>Aumentar la fuerza:</span> Levantar un 10% más en sus ejercicios principales (como sentadillas y press de banca) en los próximos tres meses.</li>
+                  <li><span>Mejorar la resistencia:</span> Correr 5 km en menos de 30 minutos en dos meses.</li>
+                  <li><span>Tonificar el cuerpo:</span> Reducir el porcentaje de grasa corporal en un 5% en seis meses.</li>
+                  <li><span>Completar una clase de HIIT:</span> Asistir a clases de entrenamiento en intervalos de alta intensidad al menos una vez por semana.</li>
+                  <li><span>Comer más saludable</span> Incluir al menos cinco porciones de frutas y verduras en su dieta diaria.</li>
+                  </ul>
+              </p>
+                 
+      </div>                
+  </div>
+
+  <div class="grid text-center7">
+      <div class="g-col-3 g-start-2">
+          <h4 class="titulo">Estadísticas</h4>
+          <img class="foto2" src="./Img/Perfilu/p2.jpg" alt="foto">
+      </div>                
+    </div>
+
+    <div class="grid text-center8">
+      <div class="g-col-3 g-start-2">
+          <h4 class="titulo">Historial Médico</h4>
+              <h5> Condiciones Médicas </h5>
+              <ul>                    
+                 <li> <span> Asma: </span>Diagnóstico desde la infancia, controlada con inhalador.</li>
+                 <li>  <span> Alergias:</span> Alergia leve a los mariscos; evita el consumo.</li>
+                 
+
+              </ul>
+          <h5>Cirugías</h5>
+              <ul>
+              <li><span>Apendicectomía:</span> Realizada a los 15 años, sin complicaciones.</li>
+          </ul>
+          <h5>Medicamentos</h5> 
+          <ul>
+              <li><span>Inhalador: </span>Usado según sea necesario para el asma.</li>
+              <li><span>Multivitamínicos: </span>Suplemento diario para asegurar una ingesta adecuada de nutrientes.</li>
+          </ul>
+
+          <h5>Chequeos Médicos</h5>
+          <ul>
+              <li><span> Última revisión general:</span> Diciembre de 2023.
+              <li><span>Resultados de análisis: </span>Colesterol y glucosa en rangos normales.
+          </ul>
+          <h5>Recomendaciones Médicas</h5>
+          </ul>
+               <li>Continuar con el programa de ejercicios, prestando atención a la respiración durante el ejercicio.
+               <li>Consultar con un médico antes de comenzar nuevos suplementos o dietas. <br>
+          </ul>
+      </div>                
+    </div>
+
+
+</section>
+</main>
+
+<!-- pie de página-->
+<footer>
+  <div class="contenedorfinal">
+    <div class="textofinal">
+      <div class="contacto">
+       <i class="bi bi-telephone-inbound"></i>
+      <span class="textocontacto">    Contacto</span>
+      <span >+ 34 123 456 789</span>
+      </div>
+
+    <div class="email">
+      <i class="bi bi-envelope"></i>
+      <span class="textoemail">Email</span>
+      <span>info@spartangym.com</span>  </div> 
+    
+    <div class="redessociales"></div>
+      <i class="bi bi-globe"></i>
+      <span class="sigueme">Síguenos en nuestras redes sociales:</span> </br>
+      <div class="media">
+        <a target="_blank" href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" href="https://x.com/"><i class="bi bi-twitter"></i></a>
+    </div>
+
+    <div class="horario">
+      <i class="bi bi-alarm"></i>
+      <span class="textohorario">Horario:</span>
+      <span>Lunes a Viernes: 6:00 - 22:00 | Sábado: 8:00 - 18:00 </span>
+    </div>      
+  </div>
+</footer>
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

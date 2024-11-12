@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #0B192C;
+    --text-color: #000000;
+    --bg-second-color: #FF6500;
+    --text-second-color: #ffff;
+    --bg-tercia-color: #1E3E62;
+  }
+/* ========================
+   Main
+   ======================== */
+
+    /* Sección "¿Quiénes somos?" */
+
+    main{
+        height: auto;
+        margin: auto;
+    }
+
+
+.quienes-somos {
+    color: white;
+    padding: 4%;
+    margin: 1%;
+}
+
+.container{
+    margin:3%;
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.quienes-somos h1{
+    font-size: 40px;
+    margin-top: 2%;
+    color: var(--bg-second-color);
+}
+
+.quienes-somos p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.quienes-somos img {
+    border-radius: 8px;
+    width: 100%;
+    height:25vh;
+    object-fit: cover;
+}
+
+
+/* Ajusta el espacio entre las tarjetas */
+.row {
+    gap: 2px; /* Espacio entre las columnas */
+}
+
+.card {
+    margin-bottom: 5px; /* Espacio entre las filas */
+    text-align: center;
+}
+.card p{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.misionVision .card img{
+    background-color: var(--text-second-color);
+    border-radius: 10px;
+    
+    
+}
+
+.quienes-somos .row p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.quienes-somos .btn {
+    background-color: var(--bg-second-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.quienes-somos .btn:hover {
+    background-color: #f05423;
+    transition: background-color 0.3s ease;
+}
+
+
