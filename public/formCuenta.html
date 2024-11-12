@@ -137,27 +137,27 @@
           >
             <h2 class="text-center mb-4">Regístrate en Espartanos Gym</h2>
 
-            <form action="formCuenta.html" method="post">
+            <form action="/docregister/add" method="POST">
               <!-- Nombre -->
               <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre completo</label>
+                <label for="name" class="form-label">Nombre completo</label>
                 <input
                   type="text"
                   class="form-control"
                   id="name"
-                  name="nombre"
+                  name="name"
                   required
                 />
               </div>
 
               <!-- Email -->
               <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
+                <label for="emailAddress" class="form-label">Correo electrónico</label>
                 <input
                   type="email"
                   class="form-control"
                   id="emailAddress"
-                  name="email"
+                  name="emailAddress"
                   required
                 />
               </div>
@@ -256,6 +256,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../script2.js"></script>
+    <script src="./script2.js"></script>
   </body>
 </html>
